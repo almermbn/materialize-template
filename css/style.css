@@ -1,0 +1,105 @@
+nav ul a,
+nav .brand-logo {
+  color: #FFF;
+}
+
+body {
+  color: #FFF;
+  background-color: #212121;
+}
+.video-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 420px;
+}
+
+.icon-block .material-icons {
+  color: orange;
+}
+
+.logo {
+  height: 64px;
+}
+
+nav .button-collapse i {
+  color: #FFF;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 420px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+@media only screen and (max-width : 992px) {
+  .video-parallax {
+    min-height: 380px !important;
+  }
+
+}
+
+@media only screen and (max-width : 740px) {
+  .video-parallax {
+    min-height: 200px !important;
+  }
+}
+
+@media only screen and (max-width : 580px) {
+  .video-parallax {
+    min-height: 330px !important;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .video-parallax {
+    min-height: 150px !important;
+  }
+
+}
+
+@media only screen and (max-width : 240px) {
+  .video-parallax {
+    min-height: 150px !important;
+  }
+
+}
