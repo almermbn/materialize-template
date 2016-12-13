@@ -15,12 +15,21 @@
 <div class="navbar-fixed">
     <nav class="grey darken-4" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" ui-sref="home" class="brand-logo"><img class="logo" src="images/logos/logo1.png"></a>
+            <a id="logo-container" ui-sref="home" class="brand-logo"><img class="logo" src="images/logos/logo1.png">
+
+            <div class="valign"><span style="font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif"><span style="color:#E8BA00">T SHOW</span>&nbsp;<span style="color:#E8BA00">E</span><span style="color:#FFFFFF">SPORTS</span></span></div></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">História</a></li>
                 <li><a href="#">Campeonatos</a></li>
                 <li><a href="#">Follow-Me</a></li>
-                <li><a href="#">História</a></li>
+                <li ng-controller="HomeController as hc">
+                    <a href="#">
+                        <i class="material-icons" ng-show="hc.play" ng-click="hc.muteVideo(hc.play);">pause_circle_outline</i>
+                    </a>
+                    <a href="#">
+                        <i class="material-icons" ng-show="!hc.play" ng-click="hc.muteVideo(hc.play);">play_circle_outline</i>
+                    </a>
+                </li>
             </ul>
 
 
@@ -28,7 +37,6 @@
                 <li><a href="#">História</a></li>
                 <li><a href="#">Campeonatos</a></li>
                 <li><a href="#">Programação</a></li>
-                <li><a href="#">História</a></li>
             </ul>
 
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>

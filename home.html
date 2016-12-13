@@ -1,17 +1,21 @@
-<div id="index-banner" class="parallax-container video-parallax">
-    <div class="section no-pad-bot">
-    </div>
-
-    <div class="parallax">
-
-        <div class="noiseOverlay">
-            <div></div>
+    <div id="index-banner" class="parallax-container video-parallax">
+        <div class="section no-pad-bot">
         </div>
 
-        <video playsinline autoplay muted loop id="bgvid" width="100%" class="responsive-video">
-            <source src="http://gabrielfallen.tempsite.ws/wp-content/uploads/2016/05/FalleN-editado.mp4" type="video/mp4">
-            </video>
+        <div class="parallax">
 
+            <div class="noiseOverlay">
+                <div></div>
+            </div>
+
+       
+            <video playsinline autoplay loop id="bgvid" width="100%" class="responsive-video">
+                <source src="http://video.wixstatic.com/video/099b4c_9bf758503b4b4bd5a50db0a8c9031b15/720p/mp4/file.mp4" type="video/mp4">
+            </video>
+            <script>
+                var video = document.getElementById('bgvid');
+                video.volume = 0.3;
+            </script>
         </div>
     </div>
 
@@ -106,7 +110,7 @@
 
   <script type="text/javascript">
     $('.parallax').parallax();
-    $('.materialboxed').materialbox();
+    $('.materialboxed').materialbox();  
 </script>
 
 <!--    <div class="row center">
