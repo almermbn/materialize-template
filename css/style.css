@@ -12,6 +12,19 @@ body {
   color: orange;
 }
 
+.flip {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+.player-backdraft {
+  margin-top: -625px;
+}
+
 .logo {
   height: 64px;
 }
@@ -54,12 +67,21 @@ p {
   font-size: inherit;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .card {
   background-color: darkgrey;
 }
 
 footer.page-footer {
   margin: 0;
+}
+
+.label {
+  color: #E8BA00;
+  font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
 }
 
 @media only screen and (max-width : 992px) {
@@ -70,15 +92,6 @@ footer.page-footer {
   #index-banner .section {
     top: 10%;
   }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-@media only screen and (max-width : 992px) {
   .video-parallax {
     min-height: 380px !important;
   }
@@ -89,11 +102,28 @@ footer.page-footer {
   .video-parallax {
     min-height: 210px !important;
   }
+
+  .player-backdraft {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .player-backdraft {
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (max-width : 568px) {
   .video-parallax {
     min-height: 180px !important;
+  }
+   .player-backdraft {
+    margin-top: 0px;
   }
 }
 
@@ -101,11 +131,17 @@ footer.page-footer {
   .video-parallax {
     min-height: 150px !important;
   }
+   .player-backdraft {
+    margin-top: 0px;
+  }
 }
 
 @media only screen and (max-width : 240px) {
   .video-parallax {
     min-height: 135px !important;
+  }
+   .player-backdraft {
+    margin-top: 0px;
   }
 }
 
@@ -118,6 +154,7 @@ footer.page-footer {
     z-index: 0;
     overflow: hidden;
 }
+
 .noiseOverlay div {
     background-image: url(http://prashantsani.com/Misc/codepen/noise.jpg);
     background-repeat: repeat;
