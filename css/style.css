@@ -3,9 +3,17 @@ nav .brand-logo {
   color: #FFF;
 }
 
+html {
+  font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
+}
+
 body {
   color: #FFF;
   background-color: #212121;
+}
+
+.portrait {
+  background-color: #E8BA00;
 }
 
 .icon-block .material-icons {
@@ -17,8 +25,17 @@ body {
   font-size: 22px !important;
 }
 
+.fix-search  {
+  position: fixed;
+  top: 0;
+}
+
 .icons:hover {
   color: #FFF;
+}
+
+.team-font-color {
+  color: #E8BA00 !important;
 }
 
 .inline {
@@ -134,7 +151,6 @@ footer.page-footer {
 
 .label {
   color: #E8BA00;
-  font-family: helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif;
 }
 
 .noiseOverlay div {
