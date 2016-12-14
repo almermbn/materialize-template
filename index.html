@@ -9,79 +9,101 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 
-<div class="navbar-fixed">
-    <nav class="grey darken-4" role="navigation">
-        <div class="nav-wrapper container">
-            <a id="logo-container" ui-sref="home" class="brand-logo"><img class="logo" src="images/logos/logo1.png">
 
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">História</a></li>
-                <li><a href="#">Campeonatos</a></li>
-                <li><a href="#">Follow-Me</a></li>
-                <li ng-controller="HomeController as hc">
-                    <a href="">
-                        <i class="material-icons" ng-show="hc.play" ng-click="hc.muteVideo(hc.play);">pause_circle_outline</i>
-                    </a>
-                    <a href="">
-                        <i class="material-icons" ng-show="!hc.play" ng-click="hc.muteVideo(hc.play);">play_circle_outline</i>
-                    </a>
-                </li>
-            </ul>
+    <div class="social-bar inline hide-on-med-and-down">
+        <ul class="center ">
+            <li><a href=""><i class="fa fa-facebook fa-2 icons" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter fa-2 icons" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube fa-2 icons" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram fa-2 icons" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-fixed">
+        <nav class="grey darken-4" role="navigation">
+            <div class="nav-wrapper container">
+
+                <a id="logo-container" ui-sref="home" class="brand-logo">
+                    <img class="logo valign" src="images/logos/logo1.png">
+                    <span class="hide-on-med-and-down">
+                        <div class="nav-separator"></div>
+                        <div class="inline logotipo">
+                            <span class="label">T SHOW</span>
+                            <span class="white-text"><span class="label">E</span>SPORTS</span>
+                        </div>
+                    </span>
+                </a>
 
 
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">História</a></li>
-                <li><a href="#">Campeonatos</a></li>
-                <li><a href="#">Programação</a></li>
-            </ul>
-
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-</div>
-
-<!-- Views-->
-<div data-ui-view></div>
-
-<footer class="page-footer grey darken-4">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="orange-text">Team</h5>
-                <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo,</p>
-            </div>
-            <div class="col l2 s12">
-                <h5 class="orange-text">Follow-me</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">FaceBook</a></li>
-                    <li><a class="white-text" href="#!">Twitter</a></li>
-                    <li><a class="white-text" href="#!">Instagram</a></li>
-                    <li><a class="white-text" href="#!">Youtube</a></li>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Follow-Me</a></li>
+                    <li ng-controller="HomeController as hc">
+                        <a href="">
+                            <i class="material-icons" ng-show="hc.play" ng-click="hc.muteVideo(hc.play);">volume_up</i>
+                        </a>
+                        <a href="">
+                            <i class="material-icons" ng-show="!hc.play" ng-click="hc.muteVideo(hc.play);">volume_off</i>
+                        </a>
+                    </li>
                 </ul>
+
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#">História</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Programação</a></li>
+                </ul>
+
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Views-->
+    <div data-ui-view></div>
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="orange-text">Team</h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo,</p>
+                </div>
+                <div class="col l2 s12">
+                    <h5 class="orange-text">Follow-me</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">FaceBook</a></li>
+                        <li><a class="white-text" href="#!">Twitter</a></li>
+                        <li><a class="white-text" href="#!">Instagram</a></li>
+                        <li><a class="white-text" href="#!">Youtube</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-copyright">
-        <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="https://github.com/almermbn">Almer Nakano</a>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="https://github.com/almermbn">Almer Nakano</a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
-<!--  Scripts-->
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/angular.min.js"></script>
-<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
-<script type="text/javascript" src="home.module.js"></script>
-<script type="text/javascript" src="home.controller.js"></script>
+    <!--  Scripts-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="home.module.js"></script>
+    <script type="text/javascript" src="home.controller.js"></script>
 
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
 
 </body>
 </html>
