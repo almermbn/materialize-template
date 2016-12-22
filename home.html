@@ -2,22 +2,6 @@
 
     <div class="parallax">
 
-        <div class="noiseOverlay">
-            <div style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMV…HwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
-"></div>
-        </div>
-        <div class="noiseOverlay">
-            <div style="        background-image: url(http://sdeerwallpaper.com/Cool-Wallpapers/dota-2-logo-wallpapers-high-quality-resolution-Is-Cool-Wallpapers.jpg);
-    width: 100%;
-    height: 90%;
-    opacity: 0.25;
-    background-attachment: initial;
-    /* filter: grayscale(100%); */
-    top: -100px;
-    left: 0px;
-    background: /* top, transparent red, faked with gradient */ linear-gradient( rgba(255, 255, 0, 0.45), rgba(255, 255, 0, 0.45) ), /* bottom, image */ url(http://sdeerwallpaper.com/Cool-Wallpapers/dota-2-logo-wallpapers-high-quality-resolution-Is-Cool-Wallpapers.jpg);"></div>
-        </div>
-
         <video playsinline autoplay loop id="bgvid" width="100%" class="responsive-video video-fix">
             <source src="http://video.wixstatic.com/video/099b4c_9bf758503b4b4bd5a50db0a8c9031b15/720p/mp4/file.mp4" type="video/mp4">
             </video>
@@ -35,17 +19,6 @@
 
     <div class="container">
         <div class="section">
-
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12" id="mainImg">
-                    <div class="icon-block">
-                        <img src="http://gabrielfallen.com.br/wp-content/uploads/2016/05/fallen-home2.png" class="responsive-img flip player-backdraft" >
-                    </div>
-                </div>
-            </div>
-
-
             <div class="col s12">
                 <div class="icon-block">
                     <ul class="sobre">
@@ -61,7 +34,47 @@
 
 
 <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="images/bg-tshow2.png" alt="Unsplashed background img 2"></div>
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <div class="cards-container">
+                    <div class="team-card-container" id="lineUp1">
+                        <div class="team-logo-container">
+                            <img src="images/logos/overwatch-line-logo.png" class="inner-card-logo fade-out-logo">
+                        </div>
+                        <img src="images/cards/overwatch.png" class="team-card">
+                    </div>
+                    <div class="team-card-container" id="lineUp2">
+                        <div class="team-logo-container">
+                            <img src="images/logos/csgo-logo.png" class="inner-card-logo fade-out-logo">
+                        </div>
+                        <img src="images/cards/csgo.png" class="team-card">
+                    </div>
+                    <div class="team-card-container" id="lineUp3">
+                        <div class="team-logo-container">
+                            <img src="images/logos/dota2-line-logo.png" class="inner-card-logo fade-out-logo">
+                        </div>
+                        <img src="images/cards/dota.png" class="team-card">
+                    </div>
+                    <div class="team-card-container" id="lineUp4">
+                        <div class="team-logo-container">
+                            <img src="images/logos/overwatch-line-logo.png" class="inner-card-logo fade-out-logo">
+                        </div>
+                        <img src="images/cards/lol.png" class="team-card">
+                    </div>
+                    <div class="team-card-container" id="lineUp5">
+                        <div class="team-logo-container">
+                            <img src="images/logos/clashroyale-logo.png" class="inner-card-logo fade-out-logo">
+                        </div>
+                        <img src="images/cards/clashroyale.png" class="team-card">
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="parallax">
+        <img src="images/bg1.jpg" alt="Unsplashed background img 2">
+    </div>
 </div>
 
 <div class="container">
@@ -156,7 +169,21 @@
 <script type="text/javascript">
     $('.parallax').parallax();
     $('.materialboxed').materialbox(); 
-    $('.carousel').carousel();
+
+    var qtLines = 5;
+
+    for(var i = 0; i < qtLines; i++){
+
+        var offset = 0;
+
+        $('#lineUp'+i).click(function(){
+            offset = '-' + (150 * i - 150) + 'px';
+            console.log(offset + '#lineUp'+i);
+            $('#lineUp'+i).animate({
+                marginLeft: offset,
+            }, 1500 );
+        });
+    }
 
     var options = [
         {
