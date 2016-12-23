@@ -2,7 +2,7 @@
 
     <div class="parallax">
 
-        <video playsinline autoplay loop id="bgvid" width="100%" class="responsive-video video-fix">
+        <video playsinline autoplay muted loop id="bgvid" width="100%" class="responsive-video video-fix">
             <source src="http://video.wixstatic.com/video/099b4c_9bf758503b4b4bd5a50db0a8c9031b15/720p/mp4/file.mp4" type="video/mp4">
             </video>
             <script>
@@ -36,37 +36,113 @@
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
-            <div class="row center">
-                <div class="cards-container">
+            <div class="row">
+                <div class="cards-container full-h">
                     <div class="team-card-container" id="lineUp1">
                         <div class="team-logo-container">
-                            <img src="images/logos/overwatch-line-logo.png" class="inner-card-logo fade-out-logo">
+                            <img src="images/logos/overwatch-line-logo.png" class="inner-card-logo fade-out-logo" id="logo-overwatch">
                         </div>
-                        <img src="images/cards/overwatch.png" class="team-card">
+                        <img src="images/cards/overwatch.png" class="team-card" id="card-overwatch">
                     </div>
                     <div class="team-card-container" id="lineUp2">
                         <div class="team-logo-container">
-                            <img src="images/logos/csgo-logo.png" class="inner-card-logo fade-out-logo">
+                            <img src="images/logos/csgo-logo.png" class="inner-card-logo fade-out-logo" id="logo-csgo" style="margin-top: -12px;">
                         </div>
-                        <img src="images/cards/csgo.png" class="team-card">
+                        <img src="images/cards/csgo.png" class="team-card" id="card-csgo">
                     </div>
                     <div class="team-card-container" id="lineUp3">
                         <div class="team-logo-container">
-                            <img src="images/logos/dota2-line-logo.png" class="inner-card-logo fade-out-logo">
+                            <img src="images/logos/dota2-line-logo.png" class="inner-card-logo fade-out-logo" id="logo-dota">
                         </div>
-                        <img src="images/cards/dota.png" class="team-card">
+                        <img src="images/cards/dota.png" class="team-card" id="card-dota">
                     </div>
                     <div class="team-card-container" id="lineUp4">
                         <div class="team-logo-container">
-                            <img src="images/logos/overwatch-line-logo.png" class="inner-card-logo fade-out-logo">
+                            <img src="images/logos/overwatch-line-logo.png" class="inner-card-logo fade-out-logo" id="logo-lol">
                         </div>
-                        <img src="images/cards/lol.png" class="team-card">
+                        <img src="images/cards/lol.png" class="team-card" id="card-lol">
                     </div>
                     <div class="team-card-container" id="lineUp5">
                         <div class="team-logo-container">
-                            <img src="images/logos/clashroyale-logo.png" class="inner-card-logo fade-out-logo">
+                            <img src="images/logos/clashroyale-logo.png" class="inner-card-logo fade-out-logo" id="logo-clasroyale">
                         </div>
-                        <img src="images/cards/clashroyale.png" class="team-card">
+                        <img src="images/cards/clashroyale.png" class="team-card" id="card-clashroyale">
+                    </div>
+
+                    <div class="lineUp-container">
+                        <div class="close-card">
+                            <a href=""><i class="fa fa-times close-btn" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="inner-card-logo-container center">
+                            <img src="images/logos/csgo-logo.png">
+                        </div>
+                        <div class="players-container">
+                            <div class="player">
+                                <img src="images/logos/csgo-logo.png">
+                                <div class="player-name center"><h5>Almer</h5></div>
+
+                                <div class="full-w center">
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-r"><img src="images/logos/facebook-logo.png"></a>
+                                    </div>
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-l"><img src="images/logos/twitter-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player">
+                                <img src="images/logos/csgo-logo.png">
+                                <div class="player-name center"><h5>Bubu</h5></div>
+
+                                <div class="full-w center">
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-r"><img src="images/logos/facebook-logo.png"></a>
+                                    </div>
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-l"><img src="images/logos/twitter-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player">
+                                <img src="images/logos/csgo-logo.png">
+                                <div class="player-name center"><h5>Symon</h5></div>
+
+                                <div class="full-w center">
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-r"><img src="images/logos/facebook-logo.png"></a>
+                                    </div>
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-l"><img src="images/logos/twitter-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player">
+                                <img src="images/logos/csgo-logo.png">
+                                <div class="player-name center"><h5>SangueV</h5></div>
+
+                                <div class="full-w center">
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-r"><img src="images/logos/facebook-logo.png"></a>
+                                    </div>
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-l"><img src="images/logos/twitter-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player">
+                                <img src="images/logos/csgo-logo.png">
+                                <div class="player-name center"><h5>Xulispa</h5></div>
+
+                                <div class="full-w center">
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-r"><img src="images/logos/facebook-logo.png"></a>
+                                    </div>
+                                    <div class="half-w player-network-container float-l">
+                                        <a href="" class="float-l"><img src="images/logos/twitter-logo.png"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
              </div>
@@ -97,7 +173,7 @@
                     <div class="card-panel grey darken-2 z-depth-4">
                         <div class="row valign-wrapper">
                             <div class="col s4">
-                                <img src="images/logos/logo3.png" alt="" class="circle responsive-img portrait z-depth-5">
+                                <img src="images/logos/logo1.png" alt="" class="circle responsive-img portrait z-depth-5">
                             </div>
                             <div class="col s8">
                                 <span class="white-text">
@@ -176,13 +252,46 @@
 
         var offset = 0;
 
-        $('#lineUp'+i).click(function(){
-            offset = '-' + (150 * i - 150) + 'px';
+       /* $('#lineUp'+i).click(function(){
+            offset = '-' + (250 * i - 50) + 'px';
             console.log(offset + '#lineUp'+i);
             $('#lineUp'+i).animate({
                 marginLeft: offset,
             }, 1500 );
-        });
+        });*/
+
+        $('#lineUp2').click(function(){
+
+            $('#card-csgo').css('opacity', '1');
+            $('#logo-csgo').css('opacity', '0');
+
+            $('#lineUp1').animate({
+                opacity: 0
+            }, 400);
+
+             $('#lineUp3').animate({
+                opacity: 0
+            }, 400);
+
+              $('#lineUp4').animate({
+                opacity: 0
+            }, 400);
+
+            $('#lineUp5').animate({
+                opacity: 0
+            }, 400, function(){
+
+              
+
+                $('#lineUp2').animate({
+                    marginLeft: '-250px',
+                }, 500, function(){
+                    $('.lineUp-container').show(500);
+                });
+
+                
+            });
+        })
     }
 
     var options = [
